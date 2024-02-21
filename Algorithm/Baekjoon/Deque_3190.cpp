@@ -21,6 +21,7 @@ bool isInBoard(const pair<int, int>& nextPlace) {
   return ((nextPlace.first > 0 && nextPlace.first <= boardSize) &&
           (nextPlace.second > 0 && nextPlace.second <= boardSize));
 }
+
 // 움직일 뱀 머리가 뱀 몸통과 부딪히는가?
 bool isSnackBody(const pair<int, int>& nextPlace) {
   bool answer = false;
