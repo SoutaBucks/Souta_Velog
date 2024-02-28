@@ -73,7 +73,7 @@ bool isLeaf(int here) {
 void dfs(int here, int weight) {
 
   if(isLeaf(here)) { // Leaf노드라면 탐색을 끝내자
-    lengths[here] = max(lengths[here], weight);
+    lengths[here] = weight;
     return;
   }
   for(int i = 0; i < tree[here].size(); i++) {
@@ -144,4 +144,3 @@ int main() {
 
   return 0;
 }
-
